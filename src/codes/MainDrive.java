@@ -7,12 +7,19 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Scanner;
 
 public class MainDrive {
 	public static void main(String[] args) {
 
-		writeToFile();
-		readFile();
+//		writeToFile();
+//		readFile();
+//		
+		Scanner myScanner = new Scanner(System.in);
+		System.out.println("파일에 저장 할 문구");
+		String inputStr = myScanner.nextLine();
+		
+		writeToFile(inputStr);
 
 	}
 
